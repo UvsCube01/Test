@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoProj.Navigation.NavigationPage1"
+             Title="NavigationPage1">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to Navigation page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button Text="Go to NavigationPage 2"
+                Clicked="Button_Clicked" 
+                Margin="10"/>
+
+        <Button Text="Pop to Page4"
+                Clicked="PopToPage4"
+                Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>

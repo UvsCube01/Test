@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="DemoProj.MVVM.Views.StudentList.StudentPopup">
+
+    <VerticalStackLayout WidthRequest="300" Padding="20">
+        <Label Text="Add Student"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,0,0,10" />
+
+        <Entry Placeholder="Enter Name" 
+               Text="{Binding Name}"/>
+        <Entry Placeholder="Enter Email" 
+               Text="{Binding Email}"/>
+        <Entry Placeholder="Enter Department" 
+               Text="{Binding Department}"/>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Text="Cancel" 
+                    Command="{Binding CancelCommand}"/>
+            <Button Text="Save" 
+                    Command="{Binding SaveCommand}"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+    
+</toolkit:Popup>
